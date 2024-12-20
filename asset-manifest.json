@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/gh-portfolio/static/js/main.05c56083.js",
+    "main.js": "/gh-portfolio/static/js/main.d3c172b1.js",
     "index.html": "/gh-portfolio/index.html",
-    "main.05c56083.js.map": "/gh-portfolio/static/js/main.05c56083.js.map"
+    "main.d3c172b1.js.map": "/gh-portfolio/static/js/main.d3c172b1.js.map"
   },
   "entrypoints": [
-    "static/js/main.05c56083.js"
+    "static/js/main.d3c172b1.js"
   ]
 }
