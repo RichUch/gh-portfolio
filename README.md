@@ -1,3 +1,33 @@
+
+This project is a simple portfolio website built with React.
+
+## Features
+
+- Responsive design
+- Smooth navigation
+- Project showcase
+- About me section
+- Contact form
+
+## Technologies Used
+
+Portfolio Setup
+Design - Canva ❌, Vercel ✅
+Code - Javascript ✅
+Frameworks - React ✅, TailwindCSS ✅, Typescript ✅
+Testing - Cypress ✅, Jest ✅
+Database - MySQL ❌
+Deployment - Github pages ✅ 
+IDE - Cursor ✅
+
+
+- React
+- React Router
+- React Hook Form
+- React Icons
+
+- npm run start (Dev env)
+- npm run delpoy (Deploy to Github pages)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
