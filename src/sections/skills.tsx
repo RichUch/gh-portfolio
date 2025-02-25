@@ -1,17 +1,28 @@
-import Image from "../components/ui/Image"
+import {FileCode2, Cpu, Database } from "lucide-react"
 
 const Skills = () => {
   return (
     <div>
-      <section>
-        <div className="image-grid">
-            <Image 
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2FVtZZcVnKNzEAAAAM%2Fballs-25-balls.gif&f=1&nofb=1&ipt=c0261c6b1901aeca571e2df8cb511d1f5e36889a94a34629943985c1b468ee80&ipo=images"
-            alt="Cat meme animation"
-            width={150}
-            height={150}
-            className="w-[300px]"
-            />
+      <section id="skills" className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">My Skills</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-light p-6 rounded-lg">
+              <FileCode2 className="h-12 w-12 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Frontend Development</h3>
+              <p>React, Vue, Tailwind CSS, JavaScript, TypeScript, HTML5</p>
+            </div>
+            <div className="bg-light p-6 rounded-lg">
+              <Cpu className="h-12 w-12 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Backend Development</h3>
+              <p>Node.js, Python, RESTful APIs</p>
+            </div>
+            <div className="bg-light p-6 rounded-lg">
+              <Database className="h-12 w-12 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Database Management</h3>
+              <p>MySQL, Firebase</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>

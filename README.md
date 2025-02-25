@@ -3,11 +3,33 @@ This project is a simple portfolio website built with React.
 
 ## Features
 
-- Responsive design
-- Smooth navigation
-- Project showcase
-- About me section
-- Contact form
+- Responsive design ❌
+- Smooth navigation ❌
+- Translations (i18n?) ❌
+- Navbar
+  - Responsive ❌
+  - Hamburger ❌
+- About ✅
+  - Actual picture of me c: ✅
+  - Link to Github ✅
+  - Link to Linkedin ✅
+- Skills ❌
+  - List ✅
+  - Card animation ❌
+  - Icons? ❌
+  - Rank in video games? ❌
+- Projects ❌
+  - List ✅
+  - Link to actual projects ❌
+- Contact ✅
+ - Send email ✅
+
+Tomorrow's Tasks
+  - Card animation ❌
+  - Icons? ❌
+  - Hamburger ❌
+  - Translations ❌
+  - Make list of projects ❌
 
 ## Technologies Used
 
@@ -16,7 +38,7 @@ Design - Canva ❌, Vercel ✅
 Code - Javascript ✅
 Frameworks - React ✅, TailwindCSS ✅, Typescript ✅
 Testing - Cypress ✅, Jest ✅
-Database - MySQL ❌
+Database - MySQL? ❌
 Deployment - Github pages ✅ 
 IDE - Cursor ✅
 

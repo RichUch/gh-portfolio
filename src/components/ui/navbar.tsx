@@ -1,8 +1,10 @@
 const Navbar = () => {
     return (
-      <header className="sticky top-0 z-10 bg-background/80 backdrop-blur-sm">
+      <header className="sticky top-0 z-10 bg-light/70 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold">Richardnak Uch</div>
+          <p className="text-2xl font-bold">
+            Richardnak Uch
+          </p>
             <nav>
               <ul className="flex space-x-4">
                 <li className="hover:bg-primary">

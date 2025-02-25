@@ -10,7 +10,6 @@ module.exports = {
         secondary: "#854836",
         dark: "#333",
         light: "#F7F7F7",
-        muted: "red"
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
@@ -18,5 +17,15 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-}
+  daisyui: {
+    themes: [
+      // {
+      //   light: "light",
+      //   dark: "dark",
+      // }
+    ]
+  },
+  plugins: [
+    require("daisyui"),
+  ],
+};
