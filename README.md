@@ -6,6 +6,7 @@ This project is a simple portfolio website built with React.
 - Responsive design ❌
 - Smooth navigation ❌
 - Translations (i18n?) ❌
+- Move to Vite ❌
 - Navbar
   - Responsive ❌
   - Hamburger ❌
@@ -23,10 +24,11 @@ This project is a simple portfolio website built with React.
   - Link to actual projects ❌
 - Contact ✅
  - Send email ✅
+ - File Upload ❌
 
 Tomorrow's Tasks
-  - Card animation ❌
-  - Icons? ❌
+  - Card animation 🟨
+  - Icons? ✅
   - Hamburger ❌
   - Translations ❌
   - Make list of projects ❌
