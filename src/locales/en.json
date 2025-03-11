@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "Hi, I'm Richardnak Uch",
+    "description": "I code, you employ, we money"
+  },
+  "skills": {
+    "title": "My Skills"
+  },
+  "projects": {
+    "project_1": {
+      "title": "Epic Button holy...",
+      "description": "This project is just a button that doesn't do anything because I didn't code it yet",
+      "src": "./Renaaak.jpg"
+    },
+    "project_2": {
+      "title": "Nothing",
+      "description": "WIP In Progress",
+      "src": "./Renaaak.jpg"
+    },
+    "project_3": {
+      "title": "Discord Bot",
+      "description": "This is a Discord Bot that will perform certain predefined actions upon receiving commands from users.",
+      "src": "./Renaaak.jpg"
+    },
+    "title": "Featured Projects",
+    "project": "Project",
+    "description_2": "WIP In Progress",
+    "view": "View Project"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send_message": "Send message",
+    "email_sent": "Email sent",
+    "email_error": "Error, your email was not sent. Please try again",
+    "file": "Upload a file"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}
+

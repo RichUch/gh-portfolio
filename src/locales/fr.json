@@ -1,0 +1,48 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "Bonjour, je suis Richardnak Uch",
+    "description": "Je code, vous engagez, on argent."
+  },
+  "skills": {
+    "title": "Mes compétences"
+  },
+  "projects": {
+    "project_1": {
+      "title": "Boutton épique mon dieu...",
+      "description": "Ce projet est seulement un boutton qui ne fait rien parce que je ne l'ai pas encore codé, désoler",
+      "src": "./Renaaak.jpg"
+    },
+    "project_2": {
+      "title": "Rien",
+      "description": "TEP Travail en progrès",
+      "src": "./Renaaak.jpg"
+    },
+    "project_3": {
+      "title": "Bot Discord",
+      "description": "Ce projet est un bot Discord qui effectue des actions selon les commandes de ses utilisateurs.",
+      "src": "./Renaaak.jpg"
+    },
+    "title": "Mes projets",
+    "project": "Projets",
+    "view": "Voir le projet"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "name": "Nom",
+    "email": "Courriel",
+    "message": "Message",
+    "send_message": "Send message",
+    "email_sent": "Courriel envoyé",
+    "email_error": "Erreur, votre courriel n'a pas été envoyé. Veuillez reéssayer",
+    "file": "Téléchargez un fichier"
+  },
+  "footer": {
+    "copyright": "Tous droits réservés"
+  }
+}

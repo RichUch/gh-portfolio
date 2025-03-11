@@ -2,14 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from "./pages/Home";
 import './styles/styles.css';
-import Navbar from "./components/ui/Navbar"; // Importing Navbar component
+import Navbar from "./components/ui/Navbar";
 import Footer from "../src/components/ui/Footer";
-
+import './i18n';
+import { useState } from "react";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
-      <Navbar />
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen}/>
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-10"
+          onClick={() => setIsOpen(false)} // Clicking it closes the menu
+        ></div>
+      )}
       <Home />
       <Footer/>
     </div>

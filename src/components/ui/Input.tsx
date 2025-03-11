@@ -17,7 +17,7 @@ function Input ({type, placeholder, className, id, name, onChange, required}: In
     <input
       type={type}
       placeholder={placeholder}
-      className={className}
+      className={`placeholder-black/50 dark:bg-dark/90 dark:text-white dark:border-dark dark:placeholder-white/70 ${className}`}
       id={id}
       name={name}
       onChange={onChange}

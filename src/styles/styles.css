@@ -2,25 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.skills_card_container {
-  @apply absolute top-0 left-0 w-full h-full bg-white border-black border-2 rounded-lg shadow-lg p-2;
-  background: linear-gradient(to bottom, rgb(241, 241, 243) 0%, rgba(255, 255, 255, 1) 60%);
-  transition: filter 0.3s ease-in-out; /* Smooth transition for blur */
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 400px; /* Adjust as needed */
+nav>ul>li {
+  @apply rounded px-2;
 }
 
-.arrow {
-  font-size: 24px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 2; /* Ensure arrows are above cards */
+nav>ul>li:hover {
+  @apply transition-colors duration-200;
+}
+
+.form-container {
+  overflow-y: auto;
+  padding-bottom: env(safe-area-inset-bottom); /* Ensure content isn't hidden on mobile with notches or safe areas */
+}
+
+button {
+  transition: 0.3s ease-in-out;
+}
+.contact_send_button {
+  @apply w-full bg-light flex justify-center items-center text-black border border-gray-300;
+  transition: 0.3s ease-in-out;
 }
