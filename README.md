@@ -17,9 +17,9 @@ This project is a simple portfolio website built with React.
 - Skills ✅
   - List ✅
   - Icons ✅
-  - Click on skills to expand window ❌
-    - Expand window component ❌
-    - Link skills to projects ❌
+  - Click on skills to expand window ✅
+    - Expand window component ✅
+    - Link skills to projects ✅
 - Projects ❌
   - List ✅
   - Link to actual projects ❌
@@ -34,11 +34,9 @@ This project is a simple portfolio website built with React.
   - Project test ❌
 
 Current
-- Testing ❌
-  - Email sending test ❌
-  - Button tests ❌
-  - Language swap test ❌
-  - Project test ❌
+  - Translations for Skills
+  - Link to actual projects -> 
+  - File Upload
 
 ## Technologies Used
 

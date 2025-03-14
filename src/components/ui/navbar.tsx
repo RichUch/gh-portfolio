@@ -58,11 +58,6 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
             <li><a href="#skills">{t("navbar.skills")}</a></li>
             <li><a href="#projects">{t("navbar.projects")}</a></li>
             <li><a href="#contact">{t("navbar.contact")}</a></li>
-            <li>
-              <a href="https://richuch.github.io/gh-portfolio/" target="_blank" rel="noopener noreferrer">
-                Github Pages
-              </a>
-            </li>
             <li><ThemeToggle /></li>
             <li><LanguageButton /></li>
           </ul>
@@ -72,20 +67,18 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
       {/* Mobile Menu */}
       <div
         ref={mobileMenuRef}
-  className={`fixed right-0 bg-white dark:bg-dark p-4 z-20 shadow-lg transform transition-transform duration-300 ease-in-out ${
+  className={`fixed right-0 bg-light dark:bg-dark p-4 z-20 shadow-lg transform transition-transform duration-300 ease-in-out ${
     isOpen ? "translate-x-0" : "translate-x-[105%]"
         }`}
-      >
+      
+        onClick={(e) => {
+          e.stopPropagation()
+        }}>
         <ul className="flex flex-col items-end text-right">
           <li className="my-2"><a href="#about">{t("navbar.about")}</a></li>
           <li className="my-2"><a href="#skills">{t("navbar.skills")}</a></li>
           <li className="my-2"><a href="#projects">{t("navbar.projects")}</a></li>
           <li className="my-2"><a href="#contact">{t("navbar.contact")}</a></li>
-          <li className="my-2">
-            <a href="https://richuch.github.io/gh-portfolio/" target="_blank" rel="noopener noreferrer">
-              Github Pages
-            </a>
-          </li>
           <li className="my-2"><ThemeToggle /></li>
           <li className="my-2"><LanguageButton /></li>
         </ul>

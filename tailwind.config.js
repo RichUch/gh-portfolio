@@ -29,9 +29,3 @@ module.exports = {
     require('tailwindcss-rtl'),
   ],
 };
-
-
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-
-// };

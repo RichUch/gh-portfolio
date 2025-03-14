@@ -23,7 +23,7 @@ const projects = () => {
               />
               <h3 className="text-xl font-semibold mb-2">{t(`projects.${projectKey}.title`)}</h3>
               <p className="mb-4 flex-grow">{t(`projects.${projectKey}.description`)}</p>
-              <Button variant="outline" className="w-full flex justify-center items-center mt-auto dark:bg-[#474747] dark:hover:bg-[#474747]/70 dark:border-black/40">
+              <Button variant="outline" className="w-full flex justify-center items-center mt-auto bg-white hover:bg-white/70 dark:bg-[#474747] dark:hover:bg-[#474747]/70 dark:border-black/40">
                 <Globe className="mr-2 h-4 w-4" /> {t("projects.view")}
               </Button>
             </div>

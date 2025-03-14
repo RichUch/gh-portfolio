@@ -10,7 +10,29 @@
     "description": "I code, you employ, we money"
   },
   "skills": {
-    "title": "My Skills"
+    "title": "My Skills",
+    "skill": {
+      "react_desc": "ReactJS is a JavaScript framework for building fast and interactive user interfaces for websites and web apps. It is one of the most widely used JavaScript frameworks",
+      "react_exp": "1+ year of experience building components for websites.",
+      "vue_desc": "Vue.js is a JavaScript framework for building user interfaces. The core library is focused on the view layer only, making it easy to integrate with other libraries or existing projects.",
+      "vue_exp":"3+ years of experience creating websites with easy-to-use components",
+      "javascript_desc": "JavaScript is a high-level, interpreted programming language. It allows you to implement complex features on web pages and is an essential part of web applications.",
+      "javascript_exp": "5+ years of creating complex functions",
+      "typescript_desc": "TypeScript is a strongly typed programming language that builds on JavaScript. It adds static types to JavaScript, helping to catch errors early and make JavaScript development more efficient.",
+      "typescript_exp": "1+ year of adding types",
+      "tailwind_desc": "TailwindCSS is a CSS framework packed with classes that can be used to build any design. It provides low-level utility classes that let you build completely custom designs.",
+      "tailwind_exp": "1+ year of designing websites",
+      "daisy_desc": "DaisyUI is a plugin for Tailwind CSS that adds semantic class names and component classes. It provides ready-to-use components built with Tailwind CSS.",
+      "daisy_exp": "1+ year of building websites",
+      "HTML_desc": "HTML5 is the latest version of the HTML standard. It includes new elements and attributes that reflect typical usage on modern websites.",
+      "HTML_exp": "5+ years of creating web pages",
+      "node_desc": "Node.js is an open-source, back-end JavaScript runtime environment. It lets you use JavaScript code outside a web browser for backend development",
+      "node_exp": "3+ years of backend development",
+      "API_desc": "A RESTful API is a way for websites and servers to communicate with each other. RESTful applications use HTTP requests to perform CRUD (Create, Read, Update, Delete) operations on resources.",
+      "API_exp": "5+ years of performing CRUD requests",
+      "firebase_desc": "Firebase is a platform that helps developers build apps without needing to manage servers. It provides tools for things like real-time database, authentication services, hosting, cloud functions and push notifications.",
+      "firebase_exp": "2+ years of using real-time databases"
+    }
   },
   "projects": {
     "project_1": {
@@ -45,6 +67,15 @@
   },
   "footer": {
     "copyright": "All rights reserved."
+  },
+  "modal": {
+    "previous": "Previous skill",
+    "next": "Next skill",
+    "close": "Close modal",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "learn": "Learn more"
   }
 }
 

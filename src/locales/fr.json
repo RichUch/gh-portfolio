@@ -10,7 +10,29 @@
     "description": "Je code, vous engagez, on argent."
   },
   "skills": {
-    "title": "Mes compétences"
+    "title": "Mes compétences",
+    "skill": {
+    "react_desc": "ReactJS est un framework JavaScript permettant de créer des interfaces utilisateur rapides et interactives pour les sites web et les applications web. C'est l'un des frameworks JavaScript les plus utilisés.",
+    "react_exp": "Plus d'un an d'expérience dans la création de composants pour les sites web.",
+    "vue_desc": "Vue.js est un framework JavaScript pour la création d'interfaces utilisateur. Sa bibliothèque principale est axée uniquement sur la couche d'affichage, ce qui facilite son intégration avec d'autres bibliothèques ou projets existants.",
+    "vue_exp":"Années d'expérience dans la création de sites web avec des composants faciles à utiliser.",
+    "javascript_desc": "JavaScript est un langage de programmation interprété de haut niveau. Il permet d'ajouter des fonctionnalités complexes aux pages web et constitue une partie essentielle des applications web.",
+    "javscript_exp": "Plus de cinq ans d'expérience dans la création de fonctions complexes.",
+    "typescript_desc": "TypeScript est un langage de programmation fortement typé basé sur JavaScript. Il ajoute des types statiques à JavaScript, ce qui permet de détecter les erreurs plus tôt et de rendre le développement JavaScript plus efficace.",
+    "typescript_exp": "Plus d'un an d'expérience dans l'ajout de types.",
+    "tailwind_desc": "TailwindCSS est un framework CSS rempli de classes permettant de créer n'importe quel design. Il fournit des classes utilitaires de bas niveau qui permettent de concevoir des interfaces entièrement personnalisées.",
+    "tailwind_exp": "Plus d'un an d'expérience dans la conception de sites web.",
+    "daisy_desc": "DaisyUI est un plugin pour Tailwind CSS qui ajoute des noms de classes sémantiques et des composants préconçus. Il fournit des composants prêts à l'emploi construits avec Tailwind CSS.",
+    "daisy_exp": "Plus d'un an d'expérience dans la création de sites web.",
+    "HTML_desc": "HTML5 est la dernière version de la norme HTML. Il introduit de nouveaux éléments et attributs qui reflètent les usages courants sur les sites web modernes.",
+    "HTML_exp": "Plus de cinq ans d'expérience dans la création de pages web.",
+    "node_desc": "Node.js est un environnement d'exécution JavaScript open-source côté serveur. Il permet d'exécuter du code JavaScript en dehors d'un navigateur web pour le développement backend.",
+    "node_exp": "Plus de trois ans d'expérience dans le développement backend.",
+    "API_desc": "Une API RESTful est un moyen de communication entre les sites web et les serveurs. Les applications RESTful utilisent des requêtes HTTP pour effectuer des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur des ressources.",
+    "API_exp": "Plus de cinq ans d'expérience dans l'exécution de requêtes CRUD.",
+    "firebase_desc": "Firebase est une plateforme qui aide les développeurs à créer des applications sans avoir à gérer de serveurs. Elle propose des outils tels qu'une base de données en temps réel, des services d'authentification, de l'hébergement, des fonctions cloud et des notifications push.",
+    "firebase_exp": "Plus de deux ans d'expérience dans l'utilisation de bases de données en temps réel."
+  }
   },
   "projects": {
     "project_1": {
@@ -44,5 +66,14 @@
   },
   "footer": {
     "copyright": "Tous droits réservés"
+  },
+  "modal": {
+    "previous": "Dernière compétence",
+    "next": "Prochaine compétence",
+    "close": "Fermer la modale",
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "learn": "Apprendre plus"
   }
 }

@@ -5,7 +5,7 @@
 html, body {
   height: 100%;
   scroll-behavior: smooth;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 nav>ul>li {
@@ -27,4 +27,50 @@ button {
 .contact_send_button {
   @apply w-full bg-light flex justify-center items-center text-black border border-gray-300;
   transition: 0.3s ease-in-out;
+}
+
+
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-slide-out-left {
+  animation: slideOutLeft 200ms ease-in-out forwards;
+}
+
+.animate-slide-out-right {
+  animation: slideOutRight 200ms ease-in-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 200ms ease-in-out forwards;
 }

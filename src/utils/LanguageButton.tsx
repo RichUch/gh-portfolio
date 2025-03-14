@@ -8,13 +8,14 @@ const LanguageButton = () => {
     localStorage.setItem('language', lang);
   };
   return (
-    <div><select
-    value={i18n.language}
-    onChange={(e) => changeLanguage(e.target.value)}
-    className="p-1 rounded-md text-black dark:text-white dark:bg-dark"
-  >
-    <option value="en">🇺🇸 English</option>
-    <option value="fr">🇫🇷 Français</option>
+    <div>
+      <select
+      value={i18n.language}
+      onChange={(e) => changeLanguage(e.target.value)}
+      className="p-1 rounded-md text-black cursor-pointer dark:text-white dark:bg-dark"
+      >
+    <option className="cursor-pointer" value="en">🇺🇸 English</option>
+    <option className="cursor-pointer" value="fr">🇫🇷 Français</option>
     {/* <option value="ar">🇸🇦 العربية</option> */}
   </select>
     </div>
