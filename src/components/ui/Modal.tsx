@@ -160,7 +160,7 @@ export function Modal({ skill, isOpen, onClose, onNext, onPrevious, direction }:
                 e.stopPropagation()
                 handlePrevious()
               }}
-              className="absolute left-0 top-1/2 -translate-x-24 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-light transition-colors z-10 dark:bg-light/20"
+              className="modal-arrows left-0 top-1/2 -translate-x-24 -translate-y-1/2"
               aria-label={t("modal.previous")}
             >
               <ChevronLeft size={24} />
@@ -171,7 +171,7 @@ export function Modal({ skill, isOpen, onClose, onNext, onPrevious, direction }:
                 e.stopPropagation()
                 handleNext()
               }}
-              className="absolute right-0 top-1/2 translate-x-24 -translate-y-1/2 p-2 bg-white rounded-full shadow-lg hover:bg-light transition-colors z-10 dark:bg-light/20"
+              className="modal-arrows right-0 top-1/2 translate-x-24 -translate-y-1/2"
               aria-label={t("modal.next")}
             >
               <ChevronRight size={24} />

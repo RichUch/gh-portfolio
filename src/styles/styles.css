@@ -29,6 +29,9 @@ button {
   transition: 0.3s ease-in-out;
 }
 
+.modal-arrows {
+  @apply absolute p-4 bg-white rounded-full shadow-lg hover:bg-light transition-colors z-10 dark:bg-light/20 dark:hover:bg-light/30
+}
 
 @keyframes slideOutLeft {
   0% {

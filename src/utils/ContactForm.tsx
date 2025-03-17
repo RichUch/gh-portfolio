@@ -7,22 +7,53 @@ import { useCustomTranslation } from "../hooks/useCustomTranslation";
 
 const ContactForm = () => {
   const { t } = useCustomTranslation();
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "", file: null as File | null, });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] || null;
+    if (file) {
+      const maxSize = 5 * 1024 * 1024; // 5MB limit
+      const allowedTypes = ["image/png", "image/jpeg", "application/pdf"];
+  
+      if (!allowedTypes.includes(file.type)) {
+        alert("Only PNG, JPG, and PDF files are allowed.");
+        return;
+      }
+  
+      if (file.size > maxSize) {
+        alert("File size must be under 5MB.");
+        return;
+      }
+  
+      setFormData((prev) => ({ ...prev, file }));
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+  
+    const formDataToSend = new FormData();
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("message", formData.message);
+    if (formData.file) {
+      formDataToSend.append("file", formData.file);
+    }
+  
     const response = await fetch("https://github-portfolio-backend-eight.vercel.app/api/send", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
+      body: formDataToSend, // ✅ Let browser set Content-Type automatically
     });
-
-    if (response.ok) alert(t("contact.email_sent"));
-    else alert(t("contact.email_error"));
+  
+    if (response.ok) {
+      alert("Email sent successfully!");
+    } else {
+      alert("Failed to send email.");
+    }
   };
 
   return (
@@ -30,13 +61,16 @@ const ContactForm = () => {
     <h2 className="text-3xl font-bold mb-8 text-center">{t("contact.title")}</h2>
     <div className="max-w-md mx-auto">
       <form className="space-y-3 flex flex-col mb-1" onSubmit={handleSubmit}>
-        <label htmlFor="name">{t("contact.name")}:</label>
+        <label htmlFor="name">{t("contact.name")}</label>
         <Input type="text" id="name" name="name" placeholder={t("contact.name")} className="rounded border p-2 border-gray-300" onChange={handleChange} required/>
 
-        <label htmlFor="email">{t("contact.email")}:</label>
+        <label htmlFor="email">{t("contact.email")}</label>
         <Input type="email" id="email" name="email" placeholder={t("contact.email")} className="rounded border p-2 border-gray-300" onChange={handleChange} required/>
 
-        <label htmlFor="message">{t("contact.message")}:</label>
+        <label htmlFor="file">{t("contact.file")}</label>
+        <Input type="file" id="file" name="file" placeholder={t("contact.file")} className="rounded border p-2 border-gray-300" onChange={handleFileChange} />
+
+        <label htmlFor="message">{t("contact.message")}</label>
         <Textarea id="message" name="message" placeholder={t("contact.message")} rows={5} cols={5} className="rounded border p-2 border-gray-300" onChange={handleChange} required/>
 
         <Button type="submit" className="contact_send_button hover:bg-white/70 dark:bg-dark/90 dark:text-white dark:border-dark dark:hover:bg-dark">

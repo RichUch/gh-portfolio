@@ -35,14 +35,15 @@ This project is a simple portfolio website built with React.
 
 Current
   - Arrow dark theme ✅
-  - Translations for Skills (French years) ❌
-  - Link to actual projects in Projects section-> ❌
+  - Translations for Skills (French years) ✅
+  - Link to actual projects in Projects section -> ❌
   - Link to projects from skill window ❌
-  - File Upload ❌
-  - Better sentences for experience in Skills modal ❌
+  - File Upload ✅
+  - Better sentences for experience in Skills modal ✅
   - Better feedback message on email send/error/missing fields ❌
   - Hover on skills to show quick overview (Experience and Projects) ❌
   - Edit the scrollbar ❌
+  - Increase modal arrow size ✅
 ## Technologies Used
 
 Portfolio Setup

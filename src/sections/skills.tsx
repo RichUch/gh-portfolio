@@ -2,6 +2,7 @@ import { ReactSVG, VueSVG, TailwindSVG, DaisyUISVG, JavascriptSVG, TypescriptSVG
 import { Modal } from "../components/ui/Modal"
 import { useState } from "react"
 import { useCustomTranslation } from "../hooks/useCustomTranslation";
+
 const Skills = () => {
   const { t } = useCustomTranslation();
   const [selectedSkillIndex, setSelectedSkillIndex] = useState<number | null>(null)
@@ -34,7 +35,7 @@ const Skills = () => {
       description:
         t("skills.skill.javascript_desc"),
       experience: t("skills.skill.javascript_exp"),
-      projects: ["KeepNEye(Sphere 48)", "Hypepoint", "Discord Bot", "Portfolio site"],
+      projects: ["KeepNEye (Sphere 48)", "Hypepoint", "Discord Bot", "Portfolio site"],
       resources: [
         { name: "MDN Web Docs - JavaScript", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
       ],
@@ -78,7 +79,7 @@ const Skills = () => {
       description:
         t("skills.skill.HTML_desc"),
       experience: t("skills.skill.HTML_exp"),
-      projects: ["KeepNEye(Sphere 48)", "Hypepoint", "Portfolio site"],
+      projects: ["KeepNEye (Sphere 48)", "Hypepoint", "Portfolio site"],
       resources: [
         { name: "MDN Web Docs - HTML", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
       ],
@@ -89,7 +90,7 @@ const Skills = () => {
       description:
         t("skills.skill.node_desc"),
       experience: t("skills.skill.node_exp"),
-      projects: ["KeepNEye(Sphere 48)", "Hypepoint", ],
+      projects: ["KeepNEye (Sphere 48)", "Hypepoint", ],
       resources: [
         { name: "Node.js", url: "https://nodejs.org/en" },
       ],
@@ -111,7 +112,7 @@ const Skills = () => {
       description:
         t("skills.skill.API_desc"),
       experience: t("skills.skill.API_exp"),
-      projects: ["KeepNEye(Sphere 48)", "Hypepoint", "Discord Bot"],
+      projects: ["KeepNEye (Sphere 48)", "Hypepoint", "Discord Bot"],
       resources: [
         { name: "RESTful API Design", url: "https://restfulapi.net/" },
       ],
@@ -122,7 +123,7 @@ const Skills = () => {
       description:
         t("skills.skill.firebase_desc"),
       experience: t("skills.skill.firebase_exp"),
-      projects: ["KeepNEye(Sphere 48)"],
+      projects: ["KeepNEye (Sphere 48)"],
       resources: [
         { name: "Firebase", url: "https://firebase.google.com/" },
       ],

@@ -1,6 +1,6 @@
 import { ChangeEventHandler } from 'react';
 
-type InputType = "text" | "number" | "tel" | "email" | "password" | "checkbox"
+type InputType = "text" | "number" | "tel" | "email" | "password" | "checkbox" | "file"
 
 interface InputProps {
   type: InputType
