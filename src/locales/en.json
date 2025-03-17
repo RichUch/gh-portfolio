@@ -7,7 +7,7 @@
   },
   "about": {
     "title": "Hi, I'm Richardnak Uch",
-    "description": "I code, you employ, we money"
+    "description": "Web developer with a love for sleek web design."
   },
   "skills": {
     "title": "My Skills",
@@ -36,19 +36,9 @@
   },
   "projects": {
     "project_1": {
-      "title": "Epic Button holy...",
-      "description": "This project is just a button that doesn't do anything because I didn't code it yet",
-      "src": "./Renaaak.jpg"
-    },
-    "project_2": {
-      "title": "Nothing",
-      "description": "WIP In Progress",
-      "src": "./Renaaak.jpg"
-    },
-    "project_3": {
       "title": "Discord Bot",
       "description": "This is a Discord Bot that will perform certain predefined actions upon receiving commands from users.",
-      "src": "./Renaaak.jpg"
+      "src": "./placeholder.svg"
     },
     "title": "Featured Projects",
     "project": "Project",

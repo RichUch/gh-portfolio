@@ -15,7 +15,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const variantStyles: Record<ButtonVariant, string> = {
   primary: "bg-blue-500 hover:bg-blue-600 focus:ring-blue-500",
   secondary: "bg-gray-200 hover:bg-gray-300 focus:ring-gray-500",
-  outline: "bg-transparent border border-gray-300 hover:bg-gray-100 focus:ring-gray-500",
+  outline: "border border-gray-300 hover:bg-gray-100 focus:ring-gray-500",
 }
 
 const Button: React.FC<ButtonProps> = ({ children, variant = "primary", className = "", ...props }) => {

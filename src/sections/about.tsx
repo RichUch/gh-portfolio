@@ -13,7 +13,8 @@ const About = () => {
             alt="Profile picture"
             width={150}
             height={150}
-            className="w-[300px] rounded-full"
+            className="w-[300px] rounded-full scale-x-[-1]"
+            
           />
         </div>
 

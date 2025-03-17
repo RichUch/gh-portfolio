@@ -67,8 +67,8 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
       {/* Mobile Menu */}
       <div
         ref={mobileMenuRef}
-  className={`fixed right-0 bg-light dark:bg-dark p-4 z-20 shadow-lg transform transition-transform duration-300 ease-in-out ${
-    isOpen ? "translate-x-0" : "translate-x-[105%]"
+        className={`fixed right-0 bg-light dark:bg-dark p-4 z-20 shadow-lg transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-[105%]"
         }`}
       
         onClick={(e) => {

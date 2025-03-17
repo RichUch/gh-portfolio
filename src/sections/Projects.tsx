@@ -5,7 +5,7 @@ import { useCustomTranslation } from "../hooks/useCustomTranslation";
 
 const projects = () => {
   const { t } = useCustomTranslation();
-  const projects = ['project_1', 'project_2', 'project_3']; 
+  const projects = ['project_1']; 
 
   return (
     <section id="projects" className="py-20 bg-light dark:bg-dark dark:text-white">
@@ -13,7 +13,7 @@ const projects = () => {
         <h2 className="text-3xl font-bold mb-8 text-center">{t("projects.title")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((projectKey) => (
-            <div key={projectKey} className="bg-background p-6 rounded-lg shadow-md flex flex-col">
+            <div key={projectKey} className="bg-white p-6 rounded-lg shadow-md flex flex-col dark:bg-[#474747]">
               <Image
                 src={t(`projects.${projectKey}.src`)}
                 alt={`Project ${projectKey}`}
@@ -23,7 +23,7 @@ const projects = () => {
               />
               <h3 className="text-xl font-semibold mb-2">{t(`projects.${projectKey}.title`)}</h3>
               <p className="mb-4 flex-grow">{t(`projects.${projectKey}.description`)}</p>
-              <Button variant="outline" className="w-full flex justify-center items-center mt-auto bg-white hover:bg-white/70 dark:bg-[#474747] dark:hover:bg-[#474747]/70 dark:border-black/40">
+              <Button variant="outline" className="w-full flex justify-center items-center mt-auto bg-light hover:bg-white/70 dark:bg-dark dark:hover:bg-[#474747]/70 dark:border-black/40">
                 <Globe className="mr-2 h-4 w-4" /> {t("projects.view")}
               </Button>
             </div>
