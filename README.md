@@ -7,6 +7,8 @@ This project is a simple portfolio website built with React.
 - Translations (i18n?) ✅
 - Move to Vite ✅
 - Dark theme ✅
+- Edit scrollbar ✅
+
 - Navbar
   - Responsive ✅
   - Hamburger ✅
@@ -25,7 +27,7 @@ This project is a simple portfolio website built with React.
   - Link to actual projects ❌
 - Contact ✅
  - Send email ✅
- - File Upload ❌
+- File Upload ✅
 - Footer ✅
 - Testing ❌
   - Email sending test ❌
@@ -34,16 +36,12 @@ This project is a simple portfolio website built with React.
   - Project test ❌
 
 Current
-  - Arrow dark theme ✅
-  - Translations for Skills (French years) ✅
-  - Link to actual projects in Projects section -> ❌
-  - Link to projects from skill window ❌
-  - File Upload ✅
-  - Better sentences for experience in Skills modal ✅
+  - File upload styling ❌
   - Better feedback message on email send/error/missing fields ❌
   - Hover on skills to show quick overview (Experience and Projects) ❌
-  - Edit the scrollbar ❌
-  - Increase modal arrow size ✅
+  - Link to actual projects in Projects section -> ❌
+  - Link to projects from skill window ❌
+
 ## Technologies Used
 
 Portfolio Setup

@@ -1,7 +1,7 @@
 {
   "homepage": "https://richuch.github.io/gh-portfolio/",
   "name": "portfolio",
-  "version": "1.5.3",
+  "version": "1.5.5",
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
@@ -60,9 +60,10 @@
     "jest": "^29.0.0",
     "postcss": "^8.4.31",
     "postcss-loader": "^8.1.1",
+    "tailwind-scrollbar": "^3.1.0",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.0.0",
     "ts-jest": "^29.2.5",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vite": "^5.0.0"
   }
 }

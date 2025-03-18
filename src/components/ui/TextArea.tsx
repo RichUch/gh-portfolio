@@ -17,7 +17,7 @@ function Textarea ({name, placeholder, rows = 20, cols=20, className, id, onChan
     placeholder={placeholder}
     rows={rows}
     cols={cols}
-    className={`placeholder-black/50 dark:bg-dark/90 dark:text-white dark:border-dark dark:placeholder-white/70 ${className}`}
+    className={`placeholder-black/50 bg-light/40 dark:bg-dark/90 dark:text-white dark:border-dark dark:placeholder-white/70 ${className}`}
     id={id}
     onChange={onChange}
     required={required}

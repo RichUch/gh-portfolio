@@ -8,6 +8,7 @@ module.exports = {
         primary: "#FFB22C",
         secondary: "#854836",
         dark: "#333",
+        darkdark: "#222",
         light: "#f0f0f0",
       },
       fontFamily: {
@@ -27,5 +28,6 @@ module.exports = {
   plugins: [
     require("daisyui"),
     require('tailwindcss-rtl'),
+    require("tailwind-scrollbar"),
   ],
 };

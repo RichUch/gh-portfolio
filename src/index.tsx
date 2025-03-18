@@ -11,7 +11,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className="h-screen overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200">
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen}/>
       {isOpen && (
         <div 

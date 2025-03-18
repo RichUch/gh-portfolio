@@ -8,7 +8,7 @@ import { useCustomTranslation } from "../hooks/useCustomTranslation";
 const ContactForm = () => {
   const { t } = useCustomTranslation();
   const [formData, setFormData] = useState({ name: "", email: "", message: "", file: null as File | null, });
-
+  const [fileName, setFileName] = useState("")
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -16,6 +16,7 @@ const ContactForm = () => {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0] || null;
     if (file) {
+      setFileName(file.name);
       const maxSize = 5 * 1024 * 1024; // 5MB limit
       const allowedTypes = ["image/png", "image/jpeg", "application/pdf"];
   
@@ -67,8 +68,15 @@ const ContactForm = () => {
         <label htmlFor="email">{t("contact.email")}</label>
         <Input type="email" id="email" name="email" placeholder={t("contact.email")} className="rounded border p-2 border-gray-300" onChange={handleChange} required/>
 
-        <label htmlFor="file">{t("contact.file")}</label>
-        <Input type="file" id="file" name="file" placeholder={t("contact.file")} className="rounded border p-2 border-gray-300" onChange={handleFileChange} />
+        <div className="flex flex-col items-center gap-2">
+          <label htmlFor="file" className="flex items-center gap-2 cursor-pointer bg-light dark:bg-dark dark:hover:bg-dark/70 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+            {t("contact.file")}
+            <input type="file" className="hidden" onChange={handleFileChange} />
+          </label>
+          {formData.file && <p className="text-sm text-black dark:text-white">{fileName}</p>}
+        </div>
+
+
 
         <label htmlFor="message">{t("contact.message")}</label>
         <Textarea id="message" name="message" placeholder={t("contact.message")} rows={5} cols={5} className="rounded border p-2 border-gray-300" onChange={handleChange} required/>

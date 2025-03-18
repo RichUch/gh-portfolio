@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-
+import { useCustomTranslation } from "../hooks/useCustomTranslation";
 interface ThemeToggleProps {
   className?: string,
 }
 
 export default function ThemeToggle({className}: ThemeToggleProps) {
+  const { t } = useCustomTranslation();
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") || "light"
   );
@@ -21,7 +22,7 @@ export default function ThemeToggle({className}: ThemeToggleProps) {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className={className}
     >
-      {theme === "dark" ? "Dark theme 🌙" : "Light theme ☀️"}
+      {theme === "dark" ? `${t("navbar.dark_theme")} 🌙` : `${t("navbar.light_theme")} ☀️`}
     </button>
   );
 }
