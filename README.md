@@ -32,10 +32,6 @@ This project is a simple portfolio website built with React.
   - Project test ❌
 
 Current
-  - Center navbar text ✅
-  - Change about sentence (French also) ✅
-  - Change hover tooltip ✅
-  - Change @email.com ✅
 
 ## Technologies Used
 

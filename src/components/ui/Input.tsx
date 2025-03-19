@@ -10,10 +10,11 @@ interface InputProps {
   name?: string,
   onChange?: ChangeEventHandler<HTMLInputElement>,
   required?: boolean,
-  disabled?: boolean
+  disabled?: boolean,
+  autoComplete?: string
 }
 
-function Input ({type, placeholder="Enter text here", className, id, name, onChange, required, disabled}: InputProps) {
+function Input ({type, placeholder="Enter text here", className, id, name, onChange, required, disabled, autoComplete}: InputProps) {
   return (
     <input
       type={type}
@@ -24,6 +25,7 @@ function Input ({type, placeholder="Enter text here", className, id, name, onCha
       onChange={onChange}
       required={required}
       disabled={disabled}
+      autoComplete={autoComplete}
     />
   )
 }

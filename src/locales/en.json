@@ -8,8 +8,8 @@
     "contact": "Contact"
   },
   "about": {
-    "title": "Hi, I'm Richardnak Uch",
-    "description": "Web developer with a love for sleek web design."
+    "title": "I'm a full-stack web developer who specializes in nice front-end web designs",
+    "description": "and together we can build your next big project. 🙂"
   },
   "skills": {
     "title": "My Skills",
@@ -56,7 +56,7 @@
     "email": "Email",
     "email_placeholder": "JohnSmith@email.com",
     "message": "Message",
-    "message_placeholder": "Write me a message! (Comments, suggestions, remarks, small details, how did you find this website? Requests for Valorant...)",
+    "message_placeholder": "Write me a message! (Comments, suggestions, remarks, small details, business inquiries, how did you find this website? Requests for Valorant...)",
     "send_message": "Send message",
     "message_sent_success": "Your message has been sent successfully!",
     "message_sent_error": "There was an error while trying sending your message. Please try again.",

@@ -6,6 +6,7 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.js'
   },
+  
   base: '/gh-portfolio/',
   server: {
     host: '0.0.0.0',

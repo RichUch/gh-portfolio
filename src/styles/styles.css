@@ -16,6 +16,12 @@ nav > ul > li:nth-child(-n+5):hover {
   @apply transition-colors duration-200 bg-gray-200 dark:bg-darkdark;
 }
 
+.oxygen-regular {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .form-container {
   overflow-y: auto;
   padding-bottom: env(safe-area-inset-bottom); /* Ensure content isn't hidden on mobile with notches or safe areas */

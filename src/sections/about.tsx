@@ -5,7 +5,7 @@ import { useCustomTranslation } from "../hooks/useCustomTranslation";
 const About = () => {
   const { t } = useCustomTranslation();
   return (
-    <section id="about" className="py-20 bg-light dark:bg-dark dark:text-white">
+    <section id="about" className="py-20 lg:py-60 bg-light dark:bg-dark dark:text-white">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <Image
@@ -14,7 +14,6 @@ const About = () => {
             width={150}
             height={150}
             className="w-[300px] rounded-full scale-x-[-1]"
-            
           />
         </div>
 

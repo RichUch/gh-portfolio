@@ -22,7 +22,7 @@ export default function ThemeToggle({className}: ThemeToggleProps) {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className={className}
     >
-      {theme === "dark" ? `${t("navbar.dark_theme")} 🌙` : `${t("navbar.light_theme")} ☀️`}
+      {theme === "dark" ? `🌙` : `☀️`}
     </button>
   );
 }

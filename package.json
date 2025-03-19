@@ -1,7 +1,7 @@
 {
   "homepage": "https://richuch.github.io/gh-portfolio/",
   "name": "portfolio",
-  "version": "1.5.8",
+  "version": "1.5.10",
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",

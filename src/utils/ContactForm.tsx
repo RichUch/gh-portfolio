@@ -7,7 +7,7 @@ import { useCustomTranslation } from "../hooks/useCustomTranslation";
 
 const ContactForm = () => {
   const { t } = useCustomTranslation();
-  const [formData, setFormData] = useState({ name: "", email: "", message: "", file: null as File | null, });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "", extra_field: "", file: null as File | null, });
   const [fileName, setFileName] = useState("")
   
   const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle")
@@ -59,6 +59,8 @@ const ContactForm = () => {
     formDataToSend.append("name", formData.name);
     formDataToSend.append("email", formData.email);
     formDataToSend.append("message", formData.message);
+    formDataToSend.append("extra_field", formData.extra_field);
+
     if (formData.file) {
       formDataToSend.append("file", formData.file);
     }
@@ -69,26 +71,39 @@ const ContactForm = () => {
         body: formDataToSend,
       });
 
-      if (response.ok) {
-        setFormStatus("success")
-        setfeedbackMessage(t("contact.message_sent_success"))
-        resetForm()
-
-        setTimeout(() => {
-          setFormStatus("idle")
-        }, 5000)
+      // Check if the response is successful
+      if (!response.ok) {
+        // If not OK, log the response status and the message from the backend
+        const data = await response.json();
+        console.error("Error response from server:", data.message);  // Log the backend message
+        setfeedbackMessage(t(data.message || "contact.message_sent_error"));
+        setFormStatus("error");
+        return;  // Exit early
       }
+
+      setFormStatus("success")
+      setfeedbackMessage(t("contact.message_sent_success"))
+      resetForm()
+
+      setTimeout(() => {
+        setFormStatus("idle")
+      }, 5000)
+
     } catch (error) {
+      console.log("error", error)
       setfeedbackMessage(t("contact.message_sent_error"))
       setFormStatus("error")
     }
   };
 
-  return (
+return (
   <div className="form-container container mx-auto px-4 dark:text-white">
     <h2 className="text-3xl font-bold mb-8 text-center">{t("contact.title")}</h2>
     <div className="max-w-md mx-auto">
       <form className="space-y-3 flex flex-col mb-1" ref={formRef} onSubmit={handleSubmit}>
+
+        <Input type="text" placeholder="" name="extra_field" className="hidden" autoComplete="off" />
+
         {/* Form status message */}
         {formStatus === "success" && (
           <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded flex items-center">
