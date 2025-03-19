@@ -9,7 +9,7 @@
   },
   "about": {
     "title": "Bonjour, je suis Richardnak Uch",
-    "description": "Développeur web avec une passion pour le design élégant."
+    "description": "Développeur web avec une passion pour le design web élégant."
   },
   "skills": {
     "title": "Mes compétences",
@@ -51,9 +51,9 @@
     "name": "Nom",
     "name_placeholder": "John Smith",
     "email": "Courriel",
-    "email_placeholder": "Cool@hotmail.com",
+    "email_placeholder": "JohnSmith@email.com",
     "message": "Message",
-    "message_placeholder": "Écriver moi un message! (Commentaires, suggestions, demande pour Valorant...)",
+    "message_placeholder": "Écriver moi un message! (Commentaires, suggestions, remarques, petits détails, comment avez-vous retrouvé ce site web? Demande pour Valorant...)",
     "send_message": "Envoyer un message",
     "message_sent_success": "Votre message a été envoyé avec succès!",
     "message_sent_error": "Une erreur est survenue lors de l'envoi de votre message, Veuillez reéssayer.",

@@ -3,31 +3,27 @@ This project is a simple portfolio website built with React.
 ## Features
 
 - Responsive design ✅
-- Smooth navigation ✅
-- Translations (i18n?) ✅
+- Translations (i18n) ✅
 - Move to Vite ✅
 - Dark theme ✅
-- Edit scrollbar ✅
 
 - Navbar
   - Responsive ✅
   - Hamburger ✅
 - About ✅
-  - Link to Github ✅
-  - Link to Linkedin ✅
+  - Links ✅
   - Put actual photo of me ✅
 - Skills ✅
-  - List ✅
-  - Icons ✅
   - Click on skills to expand window ✅
-    - Expand window component ✅
-    - Link skills to projects ✅
-- Projects ❌
+  - Expand window component ✅
+  - Tooltip hover ✅
+  - SVGs ✅
+- Projects ✅
   - List ✅
-  - Link to actual projects ❌
 - Contact ✅
  - Send email ✅
-- File Upload ✅
+ - File Upload ✅
+ - User Feedback ✅
 - Footer ✅
 - Testing ❌
   - Email sending test ❌
@@ -36,9 +32,10 @@ This project is a simple portfolio website built with React.
   - Project test ❌
 
 Current
-  - File upload styling ✅
-  - Better feedback message on email send/error/missing fields ✅
-  - Hover on skills to show quick overview (Experience and Projects) ❌
+  - Center navbar text ✅
+  - Change about sentence (French also) ✅
+  - Change hover tooltip ✅
+  - Change @email.com ✅
 
 ## Technologies Used
 

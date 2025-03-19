@@ -10,6 +10,7 @@ module.exports = {
         dark: "#333",
         darkdark: "#222",
         light: "#f0f0f0",
+        lightdark: "#d8d8d8"
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
@@ -18,12 +19,7 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: [
-      // {
-      //   light: "light",
-      //   dark: "dark",
-      // }
-    ]
+    themes: []
   },
   plugins: [
     require("daisyui"),

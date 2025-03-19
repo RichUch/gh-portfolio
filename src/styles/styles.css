@@ -9,7 +9,7 @@ html, body {
 }
 
 nav > ul > li {
-  @apply rounded px-2;
+  @apply rounded px-2 flex items-center;
 }
 
 nav > ul > li:nth-child(-n+5):hover {
@@ -24,6 +24,7 @@ nav > ul > li:nth-child(-n+5):hover {
 button {
   transition: 0.2s ease-in-out;
 }
+
 .contact_send_button {
   @apply w-full bg-light flex justify-center items-center text-black border border-gray-300 ;
 }

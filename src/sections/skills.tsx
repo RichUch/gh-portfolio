@@ -189,7 +189,7 @@ const Skills = () => {
           >
             {skill.icon}
             <p className="font-semibold">{skill.name}</p>
-            <span className="absolute bottom-full mb-2 w-max px-3 py-1 text-sm text-black bg-light dark:text-white dark:bg-dark rounded-lg opacity-0 scale-0 transition-all duration-200 group-hover:opacity-100 group-hover:scale-100">
+            <span className="absolute bottom-full mb-2 w-max px-3 py-1 text-sm text-black bg-light dark:text-white dark:bg-dark rounded-lg opacity-0 scale-80 transition-all duration-200 group-hover:opacity-100 group-hover:scale-100 pointer-events-none">
               {skill.experience}
             </span>
           </button>

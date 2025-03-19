@@ -118,9 +118,9 @@ const ContactForm = () => {
           <p className="file-requirements-font">({t("contact.file_restrictions")})</p>
 
           {formData.file &&
-          <div className="flex items-center gap-2 rounded-lg my-2 dark:bg-dark dark:text-white rounded-lg">
+          <div className="flex items-center gap-2 rounded-lg my-2 pl-2 bg-light dark:bg-dark dark:text-white rounded-lg">
             <p>{fileName}</p>
-            <Button  variant="outline" className="bg-light hover:bg-red-400" onClick={removeFile} disabled={formStatus === "submitting"}>
+            <Button  variant="outline" className="bg-lightdark dark:bg-darkdark dark:hover:bg-red-800 border-none hover:bg-red-400" onClick={removeFile} disabled={formStatus === "submitting"}>
               <p>X</p>
             </Button>
           </div>}
