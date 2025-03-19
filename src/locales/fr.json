@@ -49,11 +49,18 @@
   "contact": {
     "title": "Contactez-moi",
     "name": "Nom",
+    "name_placeholder": "John Smith",
     "email": "Courriel",
+    "email_placeholder": "Cool@hotmail.com",
     "message": "Message",
-    "send_message": "Send message",
-    "email_sent": "Courriel envoyé",
-    "email_error": "Erreur, votre courriel n'a pas été envoyé. Veuillez reéssayer",
+    "message_placeholder": "Écriver moi un message! (Commentaires, suggestions, demande pour Valorant...)",
+    "send_message": "Envoyer un message",
+    "message_sent_success": "Votre message a été envoyé avec succès!",
+    "message_sent_error": "Une erreur est survenue lors de l'envoi de votre message, Veuillez reéssayer.",
+    "message_file_type_error": "Seulement les fichiers PNG, JPG, JPEG, et PDF sont permis",
+    "message_file_size_error": "La taille du fichier doit être en-dessous de 5MB.",
+    "message_loading": "Envoie...",
+    "file_restrictions": "5MB max, png, jpg, pdf",
     "file": "Téléchargez un fichier"
   },
   "footer": {

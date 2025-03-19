@@ -24,11 +24,11 @@ const About = () => {
             {t("about.description")}
           </p>
           <div className="flex space-x-4">
-            <button className="bg-primary text-dark px-4 py-2 rounded flex items-center dark:bg-light dark:text-black dark:border-primary">
+            <button className="bg-primary/80 hover:bg-primary text-dark px-4 py-2 rounded flex items-center dark:bg-light/80 dark:hover:bg-light dark:text-black dark:border-primary">
               <GithubSVG />
               <a href="https://github.com/RichUch" target="_blank" rel="noopener noreferrer">GitHub</a>
             </button>
-            <button className="bg-dark text-white px-4 py-2 rounded flex items-center dark:bg-primary dark:text-dark dark:border-primary">
+            <button className="bg-dark/90 hover:bg-dark text-white px-4 py-2 rounded flex items-center dark:bg-primary/80 dark:hover:bg-primary dark:text-dark dark:border-primary">
               <LinkedInSVG />
               <a href="https://www.linkedin.com/in/richardnakuch" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </button>

@@ -36,11 +36,9 @@ This project is a simple portfolio website built with React.
   - Project test ❌
 
 Current
-  - File upload styling ❌
-  - Better feedback message on email send/error/missing fields ❌
+  - File upload styling ✅
+  - Better feedback message on email send/error/missing fields ✅
   - Hover on skills to show quick overview (Experience and Projects) ❌
-  - Link to actual projects in Projects section -> ❌
-  - Link to projects from skill window ❌
 
 ## Technologies Used
 

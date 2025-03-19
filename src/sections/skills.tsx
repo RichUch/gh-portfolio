@@ -184,11 +184,14 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <button
             key={skill.name}
-            className="relative bg-gray-200 rounded-lg p-4 my-2 flex flex-col items-center justify-center hover:bg-gray-300 dark:bg-dark/90 dark:hover:bg-dark  transition-colors duration-300"
+            className="relative group bg-light rounded-lg p-4 my-2 flex flex-col items-center justify-center hover:bg-gray-200 dark:bg-dark/80 dark:hover:bg-darkdark transition-colors duration-300"
             onClick={() => openModal(index)}
           >
             {skill.icon}
             <p className="font-semibold">{skill.name}</p>
+            <span className="absolute bottom-full mb-2 w-max px-3 py-1 text-sm text-black bg-light dark:text-white dark:bg-dark rounded-lg opacity-0 scale-0 transition-all duration-200 group-hover:opacity-100 group-hover:scale-100">
+              {skill.experience}
+            </span>
           </button>
         ))}
       </div>

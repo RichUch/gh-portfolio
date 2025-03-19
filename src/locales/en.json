@@ -40,21 +40,30 @@
     "project_1": {
       "title": "Discord Bot",
       "description": "This is a Discord Bot that will perform certain predefined actions upon receiving commands from users.",
-      "src": "./placeholder.svg"
+      "src": "./placeholder.svg",
+      "coming_soon": "Coming soon!",
+      "view": ""
     },
     "title": "Featured Projects",
     "project": "Project",
-    "description_2": "WIP In Progress",
+    "coming_soon": "Coming soon!",
     "view": "View Project"
   },
   "contact": {
     "title": "Get in Touch",
     "name": "Name",
+    "name_placeholder": "John Smith",
     "email": "Email",
+    "email_placeholder": "Cool@hotmail.com",
     "message": "Message",
+    "message_placeholder": "Write me a message! (Comments, suggestions, requests for Valorant...)",
     "send_message": "Send message",
-    "email_sent": "Email sent",
-    "email_error": "Error, your email was not sent. Please try again",
+    "message_sent_success": "Your message has been sent successfully!",
+    "message_sent_error": "There was an error while trying sending your message. Please try again.",
+    "message_file_type_error": "Only PNG, JPG, JPEG, and PDF files are allowed.",
+    "message_file_size_error": "File size must be under 5MB.",
+    "message_loading": "Sending...",
+    "file_restrictions": "5MB max, png, jpg, pdf",
     "file": "Upload a file"
   },
   "footer": {

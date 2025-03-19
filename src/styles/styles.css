@@ -13,7 +13,7 @@ nav > ul > li {
 }
 
 nav > ul > li:nth-child(-n+5):hover {
-  @apply transition-colors duration-200 bg-light dark:bg-darkdark;
+  @apply transition-colors duration-200 bg-gray-200 dark:bg-darkdark;
 }
 
 .form-container {
@@ -22,17 +22,19 @@ nav > ul > li:nth-child(-n+5):hover {
 }
 
 button {
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .contact_send_button {
-  @apply w-full bg-light flex justify-center items-center text-black border border-gray-300;
-  transition: 0.3s ease-in-out;
+  @apply w-full bg-light flex justify-center items-center text-black border border-gray-300 ;
 }
 
 .modal-arrows {
   @apply absolute p-4 bg-white rounded-full shadow-lg hover:bg-light transition-colors z-10 dark:bg-light/20 dark:hover:bg-light/30
 }
-
+.file-requirements-font {
+  @apply text-gray-400 italic;
+  font-size: 0.7rem;
+}
 @keyframes slideOutLeft {
   0% {
     transform: translateX(0);
