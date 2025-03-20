@@ -58,11 +58,19 @@
     "message": "Message",
     "message_placeholder": "Write me a message! (Comments, suggestions, remarks, small details, business inquiries, how did you find this website? Requests for Valorant...)",
     "send_message": "Send message",
-    "message_sent_success": "Your message has been sent successfully!",
-    "message_sent_error": "There was an error while trying sending your message. Please try again.",
     "message_file_type_error": "Only PNG, JPG, JPEG, and PDF files are allowed.",
     "message_file_size_error": "File size must be under 5MB.",
     "message_loading": "Sending...",
+    "server_response": {
+      "error_invalid_method": "Invalid method. How did you do this?",
+      "error_parsing": "Parsing error. What did you just send me?",
+      "error_missing_required_fields": "There are missing required fields. Please fill all required fields (Name, Email, Message).",
+      "error_invalid_email": "Invalid email. Please make sure the email is correct.",
+      "error_spam": "Something went wrong. Please try again later or refresh the page.",
+      "error_message_too_long": "Your message is too long. (max. 1000 characters)",
+      "success_sent": "Your message has been sent successfully!",
+      "error_sent": "There was an error while trying to send your message. Please try again."
+    },
     "file_restrictions": "5MB max, png, jpg, pdf",
     "file": "Upload a file"
   },

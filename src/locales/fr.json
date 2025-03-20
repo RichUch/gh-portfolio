@@ -55,11 +55,19 @@
     "message": "Message",
     "message_placeholder": "Écriver moi un message! (Commentaires, suggestions, remarques, petits détails, demandes d'affaires, comment avez-vous retrouvé ce site web? Demande pour Valorant...)",
     "send_message": "Envoyer un message",
-    "message_sent_success": "Votre message a été envoyé avec succès!",
-    "message_sent_error": "Une erreur est survenue lors de l'envoi de votre message, Veuillez reéssayer.",
     "message_file_type_error": "Seulement les fichiers PNG, JPG, JPEG, et PDF sont permis",
     "message_file_size_error": "La taille du fichier doit être en-dessous de 5MB.",
-    "message_loading": "Envoie...",
+    "message_loading": "Envoi en cours...",
+    "server_response": {
+      "error_invalid_method": "Méthode invalide. Comment avez-vous fait ça?",
+      "error_parsing": "Erreur d'analyse. Qu'est-ce que vous m'avez envoyé?",
+      "error_missing_required_fields": "Champs requis manquants. Veuillez remplir tous les champs obligatoirs (nom, courriel, message).",
+      "error_invalid_email": "Courriel invalide. Veuillez vous assurer que l'adresse courriel est correcte.",
+      "error_spam": "Une erreur est survenue. Veuillez réessayer plus tard ou rafraîchir la page.",
+      "error_message_too_long": "Votre message est trop long. (max. 1000 caractères).",
+      "success_sent": "Votre message a été envoyé avec succès!",
+      "error_sent": "Une erreur est survenue lors de l'envoi de votre message. Veuillez reéssayer."
+    },
     "file_restrictions": "5MB max, png, jpg, pdf",
     "file": "Téléchargez un fichier"
   },

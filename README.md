@@ -32,6 +32,9 @@ This project is a simple portfolio website built with React.
   - Project test ❌
 
 Current
+- Testing
+- Backend error response messages on frontend ✅
+- Feedback messages translation (Error and success, use function, render it in DOM) ✅
 
 ## Technologies Used
 

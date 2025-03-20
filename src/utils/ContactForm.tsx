@@ -71,18 +71,17 @@ const ContactForm = () => {
         body: formDataToSend,
       });
 
+      const data = await response.json();
       // Check if the response is successful
       if (!response.ok) {
         // If not OK, log the response status and the message from the backend
-        const data = await response.json();
-        console.error("Error response from server:", data.message);  // Log the backend message
-        setfeedbackMessage(t(data.message || "contact.message_sent_error"));
+        setfeedbackMessage(`contact.server_response.${data.message}`);
         setFormStatus("error");
-        return;  // Exit early
+        return;
       }
 
       setFormStatus("success")
-      setfeedbackMessage(t("contact.message_sent_success"))
+      setfeedbackMessage(`contact.server_response.${data.message}`)
       resetForm()
 
       setTimeout(() => {
@@ -91,7 +90,7 @@ const ContactForm = () => {
 
     } catch (error) {
       console.log("error", error)
-      setfeedbackMessage(t("contact.message_sent_error"))
+      setfeedbackMessage(`contact.server_response.${error}`)
       setFormStatus("error")
     }
   };
@@ -108,13 +107,13 @@ return (
         {formStatus === "success" && (
           <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded flex items-center">
             <CheckCircle className="h-5 w-5 mr-2" />
-            <span>{feedbackMessage}</span>
+            <span>{t(feedbackMessage)}</span>
           </div>
         )}
         {formStatus === "error" && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded flex items-center">
             <AlertCircle className="h-5 w-5 mr-2" />
-            <span>{feedbackMessage}</span>
+            <span>{t(feedbackMessage)}</span>
           </div>
         )}
 
